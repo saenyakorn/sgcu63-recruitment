@@ -21,6 +21,18 @@ vector<vc> initialize_canvas(string number, int ver_scale, int hor_scale)
   return canvas;
 }
 
+void print_canvas(vector<vc> canvas)
+{
+  for (vc canvas_hor : canvas)
+  {
+    for (char c : canvas_hor)
+    {
+      cout << c;
+    }
+    cout << endl;
+  }
+}
+
 int main()
 {
   string number;
@@ -28,4 +40,6 @@ int main()
   cin >> number >> ver_scale >> hor_scale;
 
   vector<vc> canvas = initialize_canvas(number, ver_scale, hor_scale);
+
+  print_canvas(canvas);
 }
