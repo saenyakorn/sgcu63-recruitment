@@ -17,7 +17,7 @@ function depthFirstSearch(fileToSearch, filesObj, path = "/") {
     })
   }
 
-  // enter to the next
+  // enter to the next subfolder
   Object.entries(orderedObj).forEach(([key, val]) => {
     key != "_file" ? depthFirstSearch(fileToSearch, val, path + "/" + key) : null
   })
