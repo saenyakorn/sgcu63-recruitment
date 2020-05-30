@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b56f1991-13d4-4fbb-b434-48bde8d4d426" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Prob#3 - Numbericalization.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prob#3 - Numbericalization/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DigitalNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DigitalNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,33 +75,91 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590836347718</updated>
-      <workItem from="1590836349178" duration="1539000" />
+      <workItem from="1590836349178" duration="5374000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove unnecessary file and create Main class">
+      <created>1590837992201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590837992201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create number template">
+      <created>1590838029909</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590838029909</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create number template">
+      <created>1590838130568</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590838130568</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove unnecessary file and create Main class" />
+    <MESSAGE value="Create number template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create number template" />
   </component>
   <component name="WindowStateProjectService">
     <state x="653" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1590837339301">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1590837339301" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1590836495602">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1590842074168">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590836495602" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1590836495601">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590842074168" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1590842074167">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590836495601" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1590836495600">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590842074167" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1590842074166">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590836495600" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1590836495601">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590842074166" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1590842074167">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590836495601" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590842074167" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1590841776007">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590841776007" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1590841776006">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590841776006" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1590841776006">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590841776006" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1590841776007">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590841776007" />
+    <state x="382" y="261" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1590840226593">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="382" y="261" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1680.1050@0.0.1680.1050" timestamp="1590840226593" />
   </component>
 </project>

@@ -12,17 +12,21 @@ public class DigitalNumber {
 
         int numberLength = number.length();
         int verticalLength = defaultScale * verScale;
-        int horizontalLength = defaultScale * horScale * numberLength + (numberLength * horScale);
+        int horizontalLength = defaultScale * horScale * numberLength + ((numberLength - 1) * horScale);
         canvas = new char[verticalLength][horizontalLength];
     }
 
     void drawCanvas() {
         for (int i = 0; i < canvas.length; i++) {
-            for (int j = 0; i < canvas[i].length; j++) {
-                int currentNumber = Character.getNumericValue(number.charAt(j % (defaultScale * horScale + horScale)));
+            for (int j = 0; j < canvas[i].length; j++) {
                 int posI = i / verScale;
                 int posJ = j / horScale;
-                canvas[i][j] = posJ >= 5 ? ' ' : NumberTemplate.NUMBER_TEMPLATE[currentNumber][posI][posJ];
+                int currentNumber = Character.getNumericValue(number.charAt(j / (defaultScale * horScale + horScale)));
+                if (posJ % (defaultScale + 1) < defaultScale) {
+                    canvas[i][j] = NumberTemplate.NUMBER_TEMPLATE[currentNumber][posI][posJ % (defaultScale + 1)];
+                } else {
+                    canvas[i][j] = ' ';
+                }
             }
         }
     }
@@ -30,7 +34,7 @@ public class DigitalNumber {
     void printCanvas() {
         for (char[] ver : canvas) {
             for (char c : ver) {
-                System.out.println(c);
+                System.out.print(c);
             }
             System.out.println();
         }
