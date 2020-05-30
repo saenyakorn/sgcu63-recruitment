@@ -13,6 +13,7 @@ class DigitalNumber {
     void set_ver_scale(int ver_scale);
     void set_hor_scale(int hor_scale);
     void print_canvas();
+    void draw_canvas();
 
    private:
     string number;
@@ -22,6 +23,7 @@ class DigitalNumber {
 
 DigitalNumber::DigitalNumber(string number, int ver_scale, int hor_scal) {
     // initialize canvas (set all place with NULL)
+    canvas = vector<vc>();  // clear canvas
     int number_len = number.length();
     int canvas_ver_len = 3 * ver_scale;
     int canvas_hor_len = 3 * hor_scale * number_len;
@@ -55,4 +57,7 @@ void DigitalNumber::print_canvas() {
         }
         cout << endl;
     }
+}
+
+void DigitalNumber::draw_canvas() {
 }

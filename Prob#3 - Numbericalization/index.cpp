@@ -12,4 +12,10 @@ int main() {
     string number;
     int ver_scale, hor_scale;
     cin >> number >> ver_scale >> hor_scale;
+
+    // Construct digital number named "digitalNumber"
+    DigitalNumber digitalNumber(number, ver_scale, hor_scale);
+
+    // Output
+    digitalNumber.draw_canvas();
 }
