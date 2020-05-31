@@ -22,6 +22,8 @@
     <list default="true" id="b56f1991-13d4-4fbb-b434-48bde8d4d426" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DigitalNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DigitalNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590836347718</updated>
       <workItem from="1590836349178" duration="5594000" />
-      <workItem from="1590919634914" duration="82000" />
+      <workItem from="1590919634914" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="Remove unnecessary file and create Main class">
       <created>1590837992201</created>

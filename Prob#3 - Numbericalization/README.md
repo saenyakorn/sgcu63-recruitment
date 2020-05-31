@@ -10,14 +10,17 @@ sgcu63 recruitment's problem number 3
 
 ## Project Dependencies
 
-- Node.js
+- Java
 
 ## Objectives
 
-1. Be able to handle with JSON data type.
-2. Be able to write a recursive function or know an algorithm to parse a tree in specific context.
+1. Know basics of programming (such as if-else, loop).
+2. Be able to implement a complicate visualization system.
 
 ## Ideas
 
-- This problem can be solve by using DFS(Depth-first search) algorithm.
-- First, we have to check "\_file" is exist. If it exists, find fileToSearch in the \_file array. Then, sort the subfolder by alphabet letters. Then, enter to that subfolder and repeat the function.
+- This problem is not hard but complicate. It will be easier if I use other programming languages. But I decide to use Java because I want to use it.
+- First, create a 5x5 number pattern.
+- Then, form a canvas for placing each character.
+- Next, calculated the place carefully.
+- Finally, publish the canvas that contains the result.

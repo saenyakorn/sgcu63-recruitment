@@ -10,6 +10,7 @@ public class DigitalNumber {
         setHorScale(horScale);
         setVerScale(verScale);
 
+        // calculated 2d canvas's size
         int numberLength = number.length();
         int verticalLength = defaultScale * verScale;
         int horizontalLength = defaultScale * horScale * numberLength + ((numberLength - 1) * horScale);
@@ -17,6 +18,7 @@ public class DigitalNumber {
     }
 
     void drawCanvas() {
+        // carefully place the character
         for (int i = 0; i < canvas.length; i++) {
             for (int j = 0; j < canvas[i].length; j++) {
                 int posI = i / verScale;
