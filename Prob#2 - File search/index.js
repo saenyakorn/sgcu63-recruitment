@@ -1,7 +1,7 @@
 var allPath = new Array()
 
 function depthFirstSearch(fileToSearch, filesObj, path = "/") {
-  // sort fileObject by key and copy it to orderObj
+  // sort fileObject by key and copy the result to orderedObj
   orderedObj = {}
   Object.keys(filesObj)
     .sort()
@@ -23,6 +23,7 @@ function depthFirstSearch(fileToSearch, filesObj, path = "/") {
   })
 }
 
+// export the module
 module.exports = function fileSearch(fileToSearch, filesObj) {
   allPath = new Array()
   depthFirstSearch(fileToSearch, filesObj)
