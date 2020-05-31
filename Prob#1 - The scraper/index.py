@@ -1,4 +1,5 @@
 import time
+import json
 from selenium import webdriver
 
 # interested url
@@ -26,19 +27,31 @@ baan_url_collections = [
 ]
 
 # enter to every baan site
-baan_name_collections = []
-baan_slogan_collections = []
+data_collections = []
 for baan_url in baan_url_collections:
     # load new site with baan url
     driver.get(baan_url)
+    driver.set_page_load_timeout(50)
+
+    # init baan data as object
+    data_collections.append({"url": baan_url})
 
     # get baan name and push to the array
     baan_name = driver.find_element_by_xpath("//h1[@type='header']").text
-    baan_name_collections.append(baan_name)
+    data_collections[-1]["name"] = baan_name
 
     # get baan slogan and push to the array
     baan_slogan = driver.find_element_by_xpath("//h3[@type='header']").text
-    baan_slogan_collections.append(baan_slogan)
+    data_collections[-1]["slogan"] = baan_slogan
+
+# close the automation testing
+time.sleep(1)
+driver.close()
 
 for i in range(len(baan_url_collections)):
-    print("{} {}".format(baan_name_collections[i], baan_slogan_collections[i]))
+    print("{} {}".format(data_collections[i]["name"], data_collections[i]["slogan"]))
+
+with open("./Prob#1 - The scraper/export_data.json", "w") as outfile:
+    json.dump(data_collections, outfile)
+
+print("success")
