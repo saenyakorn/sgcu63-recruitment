@@ -1,3 +1,6 @@
+<!-- additional idea: read scraped result from export_data.json and display in html -->
+<!-- you need to run this code with "live server", vscode extension, or other server -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,20 +30,22 @@
             <th>URL</th>
           </tr>
         </thead>
-        <tbody id="table-body"></tbody>
+        <tbody id="table-body">
+          <!-- this section will be fiiled by javascript code -->
+        </tbody>
       </table>
     </div>
 
     <script>
       function readBaanDataJSON() {
-        var table = document.getElementById("table")
+        var tableBody = document.getElementById("table-body")
+
+        // get the result scraped result from export_data.json
         $.ajax({
           url: "../export_data.json",
           method: "GET",
           dataType: "json",
           success: data => {
-            console.log(data)
-            var tableBody = document.getElementById("table-body")
             data.forEach((element, index) => {
               var container = document.createElement("tr")
 
@@ -65,7 +70,7 @@
               link_button.innerHTML = "Link"
               link.append(link_button)
 
-              // create a tree
+              // append a tree
               container.append(order, name, slogan, link)
               tableBody.append(container)
             })
