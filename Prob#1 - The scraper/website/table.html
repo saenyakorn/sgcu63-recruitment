@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <!-- jQuery-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Baan Table</title>
+  </head>
+  <body>
+    <div class="uk-container uk-container-expand">
+      <table class="uk-table uk-table-divider">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Slogan</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+
+    <script>
+      function readBaanDataJSON() {
+        var table = document.getElementById("table")
+        $.ajax({
+          url: "../export_data.json",
+          method: "GET",
+          dataType: "json",
+          success: data => {
+            console.log(data)
+            var tableBody = document.getElementById("table-body")
+            data.forEach((element, index) => {
+              var container = document.createElement("tr")
+
+              // Order of each baan
+              var order = document.createElement("td")
+              order.innerHTML = index + 1
+
+              // name of each baan
+              var name = document.createElement("td")
+              name.innerHTML = element["name"]
+
+              // slogan of each baan
+              var slogan = document.createElement("td")
+              slogan.innerHTML = element["slogan"]
+
+              // link to each baan
+              var link = document.createElement("td")
+              var link_button = document.createElement("a")
+              link_button.href = element["url"]
+              link_button.target = "_blank"
+              link_button.className += "uk-button uk-button-default"
+              link_button.innerHTML = "Link"
+              link.append(link_button)
+
+              // create a tree
+              container.append(order, name, slogan, link)
+              tableBody.append(container)
+            })
+          },
+          error: err => {
+            console.log(err)
+          }
+        })
+      }
+      readBaanDataJSON()
+    </script>
+  </body>
+</html>
