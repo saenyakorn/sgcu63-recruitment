@@ -4,9 +4,9 @@ sgcu63 recruitment's problem number 2
 
 ## Table of contents
 
-- [Project Dependencies](projectdependencies)
-- [Objectives](objectives)
-- [Ideas](ideas)
+- [Project Dependencies](#project-dependencies)
+- [Objectives](#objectives)
+- [Ideas](#ideas)
 
 ## Project Dependencies
 
