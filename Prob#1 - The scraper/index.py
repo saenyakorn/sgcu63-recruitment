@@ -116,10 +116,13 @@ def scrapingRubnongkaomai():
         print("Error")
 
 if __name__ == "__main__":
-    choice = input("Selected your option\n0) clear table.html content \n1) scrape rubnongkaomai.com\n")
-    if choice == "0" :
+
+    # option 0: clear table.html. For testing the new reuslt after scraping web
+    # option 1: scrape rubnongkaomai.com. For get all baan's name, and slogan.
+    option = input("Selected your option\n0) clear table.html content \n1) scrape rubnongkaomai.com\n")
+    if option == "0" :
         clearContent()
-    elif choice == "1": 
+    elif option == "1": 
         scrapingRubnongkaomai()
     else:
         print("Error")
