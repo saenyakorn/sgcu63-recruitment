@@ -1,0 +1,39 @@
+<!-- additional idea: python will use this template. Then, add scraped data into the table-body -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <title>Baan Table</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="uk-container uk-container-expand">
+      <table class="uk-table uk-table-divider">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Slogan</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- this section will be fiiled by python code -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
