@@ -96,7 +96,7 @@ def scrapingRubnongkaomai():
             url_cell_button["class"] = "uk-button uk-button-default"
 
             # aet value 
-            order_cell.string = str(i)
+            order_cell.string = str(i+1)
             name_cell.string = name
             slogan_cell.string = slogan
             url_cell_button.string = "Link"
