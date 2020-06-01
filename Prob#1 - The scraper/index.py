@@ -4,6 +4,8 @@ import json
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
+# you should run this file from "sgcu63-recruitment" directory
+
 def clearContent():
     # clear table.html content
     with open(os.path.abspath("Prob#1 - The scraper/website/table.html"), "w", encoding="utf-8") as html:
